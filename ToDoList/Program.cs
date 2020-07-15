@@ -6,7 +6,7 @@ namespace ToDoList {
 
   public class Program
   {
-    public static List<Item> catList = new List<Item> { };
+    // public static List<Item> catList = new List<Item> { };
     public static void Main ()
     {
         Console.WriteLine("Welcome to YOUR To-Do List!");
@@ -15,7 +15,13 @@ namespace ToDoList {
 
         if(userInput == "ADD")
         {
-          Console.WriteLine("Okay! Let's add something");
+          // ask user to input the item string - store it in a string variable userItem
+          // Item newCatItem1 = new Item("pet kitty");
+          // if(newCatItem1)
+          // {
+          // // confirm to user that the string(variable) has been added
+          // }
+
         }
         else
         {
@@ -25,6 +31,8 @@ namespace ToDoList {
     }
     static void AddItem ()
     {
+
+      // code to actually add the string to the list
 
     }
 
