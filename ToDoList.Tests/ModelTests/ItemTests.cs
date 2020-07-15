@@ -1,5 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ToDoList.Models;
+using System.Collections.Generic;
 
 namespace ToDoList.Tests     
 {
@@ -33,6 +34,15 @@ namespace ToDoList.Tests
       newItem.Description = updatedDescription;
       string result = newItem.Description;
       Assert.AreEqual(updatedDescription, result);
+    }
+
+    [TestMethod]
+    public void GetAll_ReturnsEmptyList_ItemList()
+    {
+      List<Item> newList = new List<Item> { };
+      List<Item> result = Item.GetAll();
+      CollectionAssert.AreEqual(newList, result);
+
     }
 
   }
